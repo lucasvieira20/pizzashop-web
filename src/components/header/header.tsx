@@ -21,6 +21,11 @@ export function Header() {
             <UtensilsCrossed className="h-4 w-4" />
             Pedidos
           </NavLink>
+
+          {/* <NavLink to="/preferences">
+            <LucideSettings className="h-4 w-4" />
+            Preferências
+          </NavLink> */}
         </nav>
         <div className="ml-auto flex items-center gap-2">
           <ThemeToggle />
