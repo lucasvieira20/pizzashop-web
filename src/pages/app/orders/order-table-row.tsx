@@ -29,7 +29,7 @@ export function OrderTableRow() {
       <TableCell>Há 15 minutos</TableCell>
       <TableCell>
         <div className="flex items-center gap-2">
-          <span className="h-2 w-2 rounded-full bg-gray-400"></span>
+          <span className="h-2 w-2 rounded-full bg-orange-400"></span>
           <span className="font-medium text-muted-foreground">Pendente</span>
         </div>
       </TableCell>

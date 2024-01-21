@@ -1,5 +1,7 @@
 import { Building, ChevronDown, LogOut } from 'lucide-react'
 
+import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
+
 import { Button } from '../ui/button'
 import {
   DropdownMenu,
@@ -23,11 +25,19 @@ export function AccountMenu() {
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end" className="w-56">
-        <DropdownMenuLabel className="flex flex-col">
-          <span>Lucas Vieira</span>
-          <span className="text-muted-foraground text-sm font-normal">
-            web.lucasvieira@gmail.com
-          </span>
+        <DropdownMenuLabel className="flex">
+          <div className="flex gap-2">
+            <Avatar>
+              <AvatarImage src="https://github.com/shadcn.png" />
+              <AvatarFallback>CN</AvatarFallback>
+            </Avatar>
+            <div className="flex flex-col gap-1">
+              <span>Lucas Vieira</span>
+              <span className="text-muted-foraground text-[12px] font-normal">
+                web.lucasvieira@gmail.com
+              </span>
+            </div>
+          </div>
         </DropdownMenuLabel>
         <DropdownMenuSeparator />
         <DropdownMenuItem>
