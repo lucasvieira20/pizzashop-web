@@ -12,7 +12,7 @@ import {
 
 export function OrderTableFilter() {
   return (
-    <form action="" className="flex items-center gap-2">
+    <form action="" className="mb-5 flex items-center gap-2">
       <span className="text-sm font-semibold">Filtros :</span>
       <Input type="text" placeholder="ID do pedido" className="h-8 w-auto" />
       <Input

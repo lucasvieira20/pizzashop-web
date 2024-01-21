@@ -12,7 +12,7 @@ export function App() {
     <HelmetProvider>
       <ThemeProvider storageKey="pizza-shop-theme" defaultTheme="dark">
         <Helmet titleTemplate="%s | Pizza.shop" />
-        <Toaster richColors />
+        <Toaster />
         <RouterProvider router={router} />
       </ThemeProvider>
     </HelmetProvider>

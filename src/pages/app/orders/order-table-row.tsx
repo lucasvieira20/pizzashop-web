@@ -1,45 +1,27 @@
+import 'react-modern-drawer/dist/index.css'
+
 import { ArrowRight, Search, X } from 'lucide-react'
 
 import { Button } from '@/components/ui/button'
-import {
-  Drawer,
-  DrawerClose,
-  DrawerContent,
-  DrawerDescription,
-  DrawerFooter,
-  DrawerHeader,
-  DrawerTitle,
-  DrawerTrigger,
-} from '@/components/ui/drawer'
+import { Sheet, SheetTrigger } from '@/components/ui/sheet'
 import { TableCell, TableRow } from '@/components/ui/table'
 
-// export interface OrderTableRowProps {}
+import { OrderDetails } from './order-details'
+
 export function OrderTableRow() {
   return (
     <TableRow>
       <TableCell>
-        <Drawer>
-          <DrawerTrigger asChild>
+        <Sheet>
+          <SheetTrigger asChild>
             <Button variant="outline" size="xs">
               <Search className="h-3 w-3" />
               <span className="sr-only">Detalhes do pedido</span>
             </Button>
-          </DrawerTrigger>
-          <DrawerContent>
-            <DrawerHeader>
-              <DrawerTitle>Are you absolutely sure?</DrawerTitle>
-              <DrawerDescription>
-                This action cannot be undone.
-              </DrawerDescription>
-            </DrawerHeader>
-            <DrawerFooter>
-              <Button>Submit</Button>
-              <DrawerClose>
-                <Button variant="outline">Cancel</Button>
-              </DrawerClose>
-            </DrawerFooter>
-          </DrawerContent>
-        </Drawer>
+          </SheetTrigger>
+
+          <OrderDetails />
+        </Sheet>
       </TableCell>
       <TableCell className="font-mono text-sm font-medium">
         3243sk24sww23o33
